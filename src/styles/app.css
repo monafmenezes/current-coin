@@ -1,0 +1,37 @@
+/* ./src/styles/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/fonts/Comfortaa-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/fonts/Comfortaa-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/fonts/Comfortaa-Medium.ttf") format("ttf");
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/fonts/Comfortaa-Light.ttf") format("ttf");
+    font-weight: 300;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/fonts/Comfortaa-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-display: swap;
+  }
+}
