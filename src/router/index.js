@@ -9,7 +9,7 @@ const routes = [
     component: HomePage,
   },
   {
-    path: "/search",
+    path: "/search/:coin",
     name: "search",
     component: Search,
   },
