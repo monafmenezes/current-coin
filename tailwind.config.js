@@ -14,6 +14,7 @@ module.exports = {
       "gold-transparent": "rgba(218, 165, 32, 0.45)",
       purple: "#823772",
       white: "#FFFFFF",
+      transparent: "rgba(0,0,0,0)",
     },
     fontFamily: {
       comfortaa: "Comfortaa",
