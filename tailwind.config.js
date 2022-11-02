@@ -16,14 +16,15 @@ module.exports = {
       white: "#FFFFFF",
     },
     fontFamily: {
-      sans: ["Comfortaa", "sans-serif"],
+      comfortaa: "Comfortaa",
     },
     borderRadius: {
-      DEFAULT: '6px',
+      DEFAULT: "6px",
     },
-    
-  },
-    extend: {},
+    extend: {
+      128: "32rem",
+      144: "36rem",
+    },
   },
   plugins: [],
 };
