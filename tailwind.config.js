@@ -6,7 +6,7 @@ module.exports = {
     screens: {
       sm: "480px",
       md: "768px",
-      lg: "976px",
+      lg: "900px",
       xl: "1440px",
     },
     colors: {
@@ -14,16 +14,18 @@ module.exports = {
       "gold-transparent": "rgba(218, 165, 32, 0.45)",
       purple: "#823772",
       white: "#FFFFFF",
+      transparent: "rgba(0,0,0,0)",
     },
     fontFamily: {
-      sans: ["Comfortaa", "sans-serif"],
+      comfortaa: "Comfortaa",
     },
     borderRadius: {
-      DEFAULT: '6px',
+      DEFAULT: "6px",
     },
-    
-  },
-    extend: {},
+    extend: {
+      128: "32rem",
+      144: "36rem",
+    },
   },
   plugins: [],
 };

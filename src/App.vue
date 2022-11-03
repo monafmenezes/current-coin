@@ -1,30 +1,16 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div class="bg-purple h-screen overflow-auto flex flex-col items-center">
+    <d-header />
+    <router-view class="lg:h-3/4" />
+    <d-footer />
+  </div>
 </template>
+<script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+import DHeader from "./components/DHeader.vue";
+import DFooter from "./components/DFooter.vue";
+export default {
+  components: { DHeader, DFooter },
+};
+</script>
