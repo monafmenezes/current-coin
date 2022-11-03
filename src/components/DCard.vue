@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div
     class="w-full bg-gold-transparent h-52 rounded mt-4 flex flex-col justify-center items-center"
   >

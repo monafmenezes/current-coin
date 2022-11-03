@@ -3,7 +3,7 @@
     <h2 class="mt-14 mb-14 text-white text-xl font-light">
       Select to search by date
     </h2>
-    <div class="grid grid-cols-5 gap-4">
+    <div class="grid gap-5 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
       <div v-for="coin in coins" :key="coin.name" class="w-44">
         <d-button @click="searchGo(coin.name, coin.search, coin.image)">{{
           coin.name
@@ -61,7 +61,7 @@ export default {
     updateCoin() {
       setInterval(() => {
         this.getCoin();
-      }, 10000);
+      }, 30000);
     },
   },
   beforeUnmount() {
