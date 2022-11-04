@@ -12,3 +12,4 @@ export default {
   name: "DHeader",
 };
 </script>
+<style></style>
