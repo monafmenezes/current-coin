@@ -6,7 +6,6 @@
   </div>
 </template>
 <script>
-
 import DHeader from "./components/DHeader.vue";
 import DFooter from "./components/DFooter.vue";
 export default {

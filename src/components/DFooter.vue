@@ -1,7 +1,5 @@
 <template>
-  <h5 class="text-sm text-center mt-2 text-white">
-    Copyright © {{ newDate }}
-  </h5>
+  <h5 class="text-sm text-center mt-2 text-white">Copyright © {{ newDate }}</h5>
 </template>
 
 <script>

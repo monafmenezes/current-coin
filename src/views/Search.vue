@@ -3,14 +3,27 @@
     <h2 class="text-xl text-white text-center font-light pt-10 pb-4">
       Select the date and time and leave the rest to us 😁
     </h2>
-    <div class="max-w-md w-11/12 h-80 bg-gold-transparent rounded flex flex-col items-center p-4">
+    <div
+      class="max-w-md w-11/12 h-80 bg-gold-transparent rounded flex flex-col items-center p-4"
+    >
       <h3 class="text-xl text-white">{{ info.name }}</h3>
-      <img :src="require(`../static/${$route.query.image}`)" class="w-16 mt-3 animate-pulse" :alt="info.name" />
+      <img
+        :src="require(`../static/${$route.query.image}`)"
+        class="w-16 mt-3 animate-pulse"
+        :alt="info.name"
+      />
       <div v-if="!isSearch" class="flex flex-col items-center justify-center">
-        <input v-model="info.date" class="mt-5 rounded p-1 bg-transparent text-white cursor-pointer" type="date" />
-        <input class="rounded p-1 bg-purple bg-transparent text-white cursor-pointer" type="time"
-          v-model="info.time" />
-          <span v-if="invalid" class="text-white text-xs">{{ error }}</span>
+        <input
+          v-model="info.date"
+          class="mt-5 rounded p-1 bg-transparent text-white cursor-pointer"
+          type="date"
+        />
+        <input
+          class="rounded p-1 bg-purple bg-transparent text-white cursor-pointer"
+          type="time"
+          v-model="info.time"
+        />
+        <span v-if="invalid" class="text-white text-xs">{{ error }}</span>
       </div>
 
       <div v-else>
@@ -20,10 +33,19 @@
         </h3>
       </div>
 
-      <d-button v-if="!isSearch" class="w-32 mt-5" @click.prevent="getCoinDateTime()">Search</d-button>
-      <d-button v-else class="w-32" @click="handleNewRequest()">New Request</d-button>
+      <d-button
+        v-if="!isSearch"
+        class="w-32 mt-5"
+        @click.prevent="getCoinDateTime()"
+        >Search</d-button
+      >
+      <d-button v-else class="w-32" @click="handleNewRequest()"
+        >New Request</d-button
+      >
     </div>
-    <router-link class="text-gold hover:text-white" to="/">Previous page</router-link>
+    <router-link class="text-gold hover:text-white" to="/"
+      >Previous page</router-link
+    >
   </div>
 </template>
 
@@ -45,7 +67,7 @@ export default {
       },
       isSearch: false,
       error: "You must enter a valid value",
-        invalid: false,
+      invalid: false,
     };
   },
   methods: {
@@ -56,7 +78,11 @@ export default {
         const timestampRequest = getUnixTime(Date.parse(dateRequest));
         const timestampAtt = getUnixTime(Date.parse(dateAtt));
         coins
-          .listDateTime(this.$route.query.search, timestampRequest, timestampAtt)
+          .listDateTime(
+            this.$route.query.search,
+            timestampRequest,
+            timestampAtt
+          )
           .then((response) => {
             this.info.price = response.data.prices[0][1].toFixed(3);
             this.isSearch = true;
@@ -73,6 +99,6 @@ export default {
       this.info.price = null;
       this.isSearch = false;
     },
-  }
+  },
 };
 </script>
