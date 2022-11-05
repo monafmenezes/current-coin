@@ -51,6 +51,10 @@ $ cd current-price
 # Instale as dependências
 $ npm i
 
+# Inicie o servidor
+
+$ npm run serve
+
 # O servidor inciará na porta:3000 - acesse <http://localhost:8080>
 ```
 
