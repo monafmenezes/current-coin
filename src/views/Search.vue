@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex flex-col items-center">
+  <div class="container mx-auto flex p-2 flex-col items-center">
     <h2 class="text-xl text-white text-center font-light pt-10 pb-4">
       Select the date and time and leave the rest to us 😁
     </h2>
@@ -33,10 +33,7 @@
         </h3>
       </div>
 
-      <d-button
-        v-if="!isSearch"
-        class="w-32 mt-5"
-        @click.prevent="getCoinDateTime()"
+      <d-button v-if="!isSearch" class="w-32 mt-5" @click="getCoinDateTime()"
         >Search</d-button
       >
       <d-button v-else class="w-32" @click="handleNewRequest()"
