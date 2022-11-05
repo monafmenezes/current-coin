@@ -55,7 +55,7 @@ $ npm i
 
 $ npm run serve
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:8080>
+# O servidor inciará na porta:8080 - acesse <http://localhost:8080>
 ```
 
 ### 🛠 Tecnologias
