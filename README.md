@@ -13,7 +13,7 @@
 
 ### ✅ Demonstração da aplicação
 
-Vercel: [https://monafmenezes.github.io/current-coin/](https://monafmenezes.github.io/current-coin/)
+Gh-pages: [https://monafmenezes.github.io/current-coin/](https://monafmenezes.github.io/current-coin/)
 
 #### 🏠 Página Home
 
