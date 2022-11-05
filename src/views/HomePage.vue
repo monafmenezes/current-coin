@@ -61,7 +61,7 @@ export default {
     updateCoin() {
       setInterval(() => {
         this.getCoin();
-      }, 30000);
+      }, 20000);
     },
   },
   beforeUnmount() {
