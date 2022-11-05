@@ -51,7 +51,7 @@ $ cd current-price
 # Instale as dependências
 $ npm i
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+# O servidor inciará na porta:3000 - acesse <http://localhost:8080>
 ```
 
 ### 🛠 Tecnologias
